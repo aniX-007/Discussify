@@ -40,7 +40,7 @@ function AppContent() {
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="*" element={<NotFoundPage mode={mode} />} />
       </Routes>
-      {!hideNavAndFooter && <AppFooter />}
+      {!hideNavAndFooter && <AppFooter mode={mode} />}
     </>
   );
 }
